@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function TailoredPathways() {
   const pathways = [
@@ -50,7 +51,7 @@ export default function TailoredPathways() {
             <div key={idx} className={`${path.bgColor} rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col`}>
               
               <div className="relative h-56 w-full overflow-hidden bg-slate-200">
-                <img 
+                <Image 
                   src={path.image} 
                   alt={path.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 

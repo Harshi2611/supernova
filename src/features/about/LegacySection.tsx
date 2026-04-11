@@ -89,7 +89,7 @@ export default function LegacySection() {
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#00457D]/15 transform -translate-x-1/2" />
 
           <div className="space-y-8 md:space-y-0">
-            {timelineItems.map((item, index) => (
+            {timelineItems.map((item) => (
               <div
                 key={item.year}
                 className={`relative flex flex-col md:flex-row items-start md:items-center mb-8 ${

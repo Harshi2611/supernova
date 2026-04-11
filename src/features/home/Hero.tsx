@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, StarIcon } from "lucide-react";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -78,7 +79,7 @@ const HeroSection = () => {
             className="hidden lg:block relative"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
+              <Image
                 src={""}
                 alt="SuperNova coaching - Board, Foundation, NEET, JEE"
                 className="w-full h-auto rounded-2xl object-cover"

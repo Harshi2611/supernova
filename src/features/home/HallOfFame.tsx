@@ -33,19 +33,6 @@ const toppers = [
   },
 ];
 
-const mobileToppers = [
-  {
-    name: "Arjan Sharma",
-    exam: "AIR 14 (JEE)",
-    quote:
-      '"The AI tutor for analytics prepared me 300 hours of redundant study time."',
-    initials: "AS",
-    bg: "from-[#145da0] to-[#051d40]",
-    score: "715",
-    scoreLabel: "720",
-  },
-];
-
 export default function HallOfFame() {
   return (
     <>
@@ -123,7 +110,7 @@ export default function HallOfFame() {
             Hall of Nova
           </h2>
           <p className="text-gray-400 text-xs mb-5">
-            Our toppers don't just clear exams, they dominate.
+            Our toppers don&apos;t just clear exams, they dominate.
           </p>
 
           {/* Horizontal scroll */}
@@ -143,8 +130,8 @@ export default function HallOfFame() {
                   AIR 14 (JEE)
                 </div>
                 <p className="text-gray-400 text-[10px] mt-1.5 leading-relaxed line-clamp-3">
-                  "The AI tutor for analytics prepared me — saved 300 hours of
-                  redundant study time."
+                  The AI tutor for analytics prepared me — saved 300 hours of
+                  redundant study time
                 </p>
               </div>
             </div>
@@ -163,8 +150,8 @@ export default function HallOfFame() {
                   715/720 NEET
                 </div>
                 <p className="text-gray-400 text-[10px] mt-1.5 leading-relaxed line-clamp-3">
-                  "SuperNova's personalized roadmap kept me focused throughout 2
-                  years of prep."
+                  SuperNova&apos;s personalized roadmap kept me focused
+                  throughout 2 years of prep
                 </p>
               </div>
             </div>

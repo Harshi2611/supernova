@@ -1,6 +1,7 @@
 "use client";
 
 import { FlaskConical, Heart, Wifi } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
@@ -55,7 +56,7 @@ export default function EnvironmentSection() {
                   i === 0 ? "col-span-2 h-52" : "h-40"
                 }`}
               >
-                <img
+                <Image
                   src={img.src}
                   alt={img.alt}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"

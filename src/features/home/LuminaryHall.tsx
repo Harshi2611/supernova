@@ -1,4 +1,5 @@
 import { Award, Trophy } from "lucide-react";
+import Image from "next/image";
 
 export default function LuminaryHall() {
   const students = [
@@ -74,7 +75,7 @@ export default function LuminaryHall() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 auto-rows-fr h-[600px] md:h-[700px]">
             {students.map((student, idx) => (
               <div key={idx} className={`relative rounded-[2rem] overflow-hidden group ${student.span} ${student.height}`}>
-                <img 
+                <Image 
                   src={student.image} 
                   alt={student.name} 
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 

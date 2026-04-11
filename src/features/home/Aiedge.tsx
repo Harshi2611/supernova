@@ -11,8 +11,8 @@ export default function AIEdge() {
               The AI Edge
             </h2>
             <p className="text-gray-400 text-sm">
-              We don't just teach; we use cutting-edge artificial intelligence
-              to tailor your learning journey in real-time.
+              We don&apos;t just teach; we use cutting-edge artificial
+              intelligence to tailor your learning journey in real-time.
             </p>
           </div>
 

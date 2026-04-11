@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -92,7 +93,7 @@ export default function Hero() {
                 className="relative rounded-2xl overflow-hidden shadow-2xl"
                 style={{ transform: "rotate(2deg)" }}
               >
-                <img
+                <Image
                   src="https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="SuperNova Coaching Institute - Modern campus building"
                   className="w-full h-[480px] object-cover"

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Calculator, FlaskConical, ArrowRight } from "lucide-react";
+import { BookOpen, Calculator, ArrowRight } from "lucide-react";
 
 export default function CurriculumPathways() {
   return (

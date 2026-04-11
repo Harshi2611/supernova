@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import Image from "next/image";
 
 export default function FeaturedResource() {
   return (
@@ -8,7 +9,7 @@ export default function FeaturedResource() {
       <div className="col-span-8 group relative overflow-hidden rounded-3xl shadow-xl bg-slate-900 border border-slate-200">
         <div className="absolute inset-0 z-0">
           {/* Replace this div with a real next/image once copied to public */}
-          <img 
+          <Image 
             src="/neural_networks_banner.png" 
             alt="Neural Networks" 
             className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -60,7 +61,7 @@ export default function FeaturedResource() {
 
         <div className="flex items-center gap-4 pt-6 border-t border-slate-200 mt-auto">
           <div className="w-12 h-12 rounded-full overflow-hidden bg-slate-200 shrink-0 border border-slate-300">
-             <img src="https://i.pravatar.cc/150?img=11" alt="Author" className="w-full h-full object-cover" />
+             <Image src="https://i.pravatar.cc/150?img=11" alt="Author" className="w-full h-full object-cover" />
           </div>
           <div>
             <div className="text-sm font-bold text-slate-800">Dr. Janvi Sharma</div>

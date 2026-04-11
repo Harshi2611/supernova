@@ -65,6 +65,7 @@ export default function InquiryModal() {
     }),
     onSubmit: async (values) => {
       console.log("🚀 ~ :48 ~ InquiryModal ~ values:", values);
+      setIsSubmitted(true);
     },
   });
 

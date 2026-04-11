@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ListFilter } from "lucide-react";
+import Image from "next/image";
 
 export default function ResourceGrid() {
   const articles = [
@@ -51,7 +52,7 @@ export default function ResourceGrid() {
         {articles.map((article) => (
           <div key={article.id} className="group cursor-pointer flex flex-col h-full">
             <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 mb-5 shadow-sm group-hover:shadow-md transition-shadow">
-               <img 
+               <Image 
                  src={article.image} 
                  alt={article.title}
                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

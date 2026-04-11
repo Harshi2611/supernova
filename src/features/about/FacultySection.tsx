@@ -1,6 +1,7 @@
 "use client";
 
 import { Quote } from "lucide-react";
+import Image from "next/image";
 
 const faculty = [
   {
@@ -60,7 +61,7 @@ export default function FacultySection() {
               className="group bg-white rounded-2xl border border-[#E8F2FB] overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
                   className="w-full h-56 object-cover object-top group-hover:scale-105 transition-transform duration-500"

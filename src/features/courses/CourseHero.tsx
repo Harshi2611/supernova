@@ -37,7 +37,7 @@ export default function CourseHero() {
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl bg-slate-100 aspect-[4/3] border-[6px] border-white">
               {/* Fallback to gray background if image fails, but normally Next.js Image */}
               <div className="w-full h-full bg-slate-200 absolute inset-0 mix-blend-multiply" />
-              <img 
+              <Image 
                 src="/courses-hero.png" 
                 alt="Students studying collaboratively"
                 className="object-cover w-full h-full"
