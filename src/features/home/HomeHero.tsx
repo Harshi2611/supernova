@@ -1,5 +1,6 @@
 "use client";
 
+import star from "@/assets/star.png";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Star } from "lucide-react";
@@ -24,13 +25,14 @@ export default function HomeHero() {
               Education is passion
             </div>
 
-            <h1 className="text-5xl lg:text-7xl font-bold font-heading text-[#006EBC] leading-[1.1] mb-6">
+            <h1 className="text-5xl lg:text-7xl font-bold font-heading text-primary leading-[1.1] mb-6">
               Transform Your Academic with SuperNova
             </h1>
 
             <p className="text-lg text-slate-600 mb-10 max-w-xl font-sans leading-relaxed">
-              Personalized learning, expert guidance & proven results for Grades
-              8–12, NEET & JEE aspirants.
+              Personalized learning, expert guidance & proven results
+              <br className="hidden lg:block" /> for Grades 1<sup>st</sup> to 12
+              <sup>th</sup>, NEET & JEE aspirants.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -42,7 +44,7 @@ export default function HomeHero() {
                 variant="outline"
                 className="h-14 px-8 border-slate-300 text-slate-700 hover:bg-slate-50 font-bold rounded-xl text-lg w-full sm:w-auto transition-colors"
               >
-                Explore Programs
+                Explore Courses
               </Button>
             </div>
           </motion.div>
@@ -74,23 +76,28 @@ export default function HomeHero() {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="absolute bottom-[-1rem] lg:bottom-12 -left-4 lg:-left-12 bg-transparent backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/50 z-20 max-w-[280px]"
             >
-              <div className="flex items-center gap-4 mb-3">
-                <div className="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-xl shadow-md">
-                  <Star className="w-5 h-5 fill-current" />
+              <div className="flex items-center gap-4">
+                {/* Icon */}
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-md shrink-0">
+                  <Image
+                    src={star} // put your image inside /public folder
+                    alt="Star"
+                    width={45}
+                    height={45}
+                    className="object-contain"
+                  />
                 </div>
-                <div>
+
+                {/* Text */}
+                <div className="flex flex-col justify-center">
                   <div className="text-3xl font-bold text-primary font-heading leading-none">
-                    98%
+                    100%
                   </div>
-                  <div className="text-xs text-slate-500 text-secondary font-bold uppercase tracking-wider">
-                    Success Rate
+                  <div className="text-xs text-slate-500 font-bold uppercase tracking-wider leading-tight">
+                    Improvement
                   </div>
                 </div>
               </div>
-              <p className="text-xs text-slate-500 leading-tight">
-                The precision of SuperNova&apos;s curriculum changes the entire
-                approach to competitive learning.
-              </p>
             </motion.div>
           </motion.div>
         </div>

@@ -3,6 +3,7 @@ import PulseEcosystem from "@/features/home/PulseEcosystem";
 import TailoredPathways from "@/features/home/TailoredPathways";
 import LuminaryHall from "@/features/home/LuminaryHall";
 import HomeCTA from "@/features/home/HomeCTA";
+import StudyMaterial from "@/features/home/StudyMaterial";
 
 export const metadata = {
   title: "SuperNova Coaching Center | Ignite Your Future",
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <main className="flex-1 w-full bg-white flex flex-col min-h-screen">
       <HomeHero />
+      <StudyMaterial/>
       <PulseEcosystem />
       <TailoredPathways />
       <LuminaryHall />
