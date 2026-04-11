@@ -1,8 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import { ArrowRight, Star } from "lucide-react";
 import Image from "next/image";
 
 export default function HomeHero() {
@@ -19,20 +19,18 @@ export default function HomeHero() {
             transition={{ duration: 0.6 }}
             className="flex flex-col max-w-2xl"
           >
-            <div className="inline-flex items-center gap-2 bg-[#e9d287] text-amber-900 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-8 self-start shadow-sm">
-              <Star className="w-3.5 h-3.5 fill-current" />
-              Standard Excellence Redefined
+            <div className="inline-flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-full text-xs font-bold border border-primary uppercase tracking-widest mb-8 self-start shadow-sm">
+              <Star className="w-3.5 h-3.5 fill-current text-primary" />
+              Education is passion
             </div>
 
-            <h1 className="text-5xl lg:text-7xl font-bold font-heading text-primary leading-[1.1] mb-6">
-              Ignite Your <br className="hidden lg:block" />
-              <span className="text-secondary lg:text-primary">Future.</span>
+            <h1 className="text-5xl lg:text-7xl font-bold font-heading text-[#006EBC] leading-[1.1] mb-6">
+              Transform Your Academic with SuperNova
             </h1>
 
             <p className="text-lg text-slate-600 mb-10 max-w-xl font-sans leading-relaxed">
-              Merging technical precision with pedagogical mastery to create the
-              next generation of luminaries in NEET, JEE, and Foundation
-              sciences.
+              Personalized learning, expert guidance & proven results for Grades
+              8–12, NEET & JEE aspirants.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -56,17 +54,17 @@ export default function HomeHero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative lg:h-[600px] flex justify-center lg:justify-end"
           >
-            <div className="relative w-full max-w-[500px] aspect-[4/5] lg:aspect-auto lg:h-full rounded-[2rem] overflow-hidden shadow-2xl z-10">
-              {/* Replace with real image once copied */}
-              <div className="relative w-full h-[600px]">
-                <Image
-                  src="/focused_student_hero.png"
-                  alt="Student Studying Intently"
-                  fill
-                  className="object-cover object-center"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+            <div className="relative w-full max-w-[500px] aspect-[4/5] lg:aspect-auto lg:h-[600px] rounded-[2rem] overflow-hidden shadow-2xl z-10">
+              <Image
+                src="/focused_student_hero.png"
+                alt="Student Studying Intently"
+                fill
+                className="object-cover object-[center_top]"
+                priority
+              />
+
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
             </div>
 
             {/* Floating overlay card */}
@@ -74,7 +72,7 @@ export default function HomeHero() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="absolute bottom-[-1rem] lg:bottom-12 -left-4 lg:-left-12 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/50 z-20 max-w-[280px]"
+              className="absolute bottom-[-1rem] lg:bottom-12 -left-4 lg:-left-12 bg-transparent backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/50 z-20 max-w-[280px]"
             >
               <div className="flex items-center gap-4 mb-3">
                 <div className="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-xl shadow-md">
@@ -84,7 +82,7 @@ export default function HomeHero() {
                   <div className="text-3xl font-bold text-primary font-heading leading-none">
                     98%
                   </div>
-                  <div className="text-xs text-slate-500 font-bold uppercase tracking-wider">
+                  <div className="text-xs text-slate-500 text-secondary font-bold uppercase tracking-wider">
                     Success Rate
                   </div>
                 </div>
