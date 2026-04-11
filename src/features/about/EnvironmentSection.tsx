@@ -59,6 +59,7 @@ export default function EnvironmentSection() {
                 <Image
                   src={img.src}
                   alt={img.alt}
+                  fill
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>

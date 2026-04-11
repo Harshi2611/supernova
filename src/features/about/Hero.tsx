@@ -90,14 +90,16 @@ export default function Hero() {
                 }}
               />
               <div
-                className="relative rounded-2xl overflow-hidden shadow-2xl"
+                className="relative h-[480px] rounded-2xl overflow-hidden shadow-2xl"
                 style={{ transform: "rotate(2deg)" }}
               >
                 <Image
                   src="https://images.pexels.com/photos/1370296/pexels-photo-1370296.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="SuperNova Coaching Institute - Modern campus building"
-                  className="w-full h-[480px] object-cover"
+                  fill
+                  className="object-cover"
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-[#00457D]/30 to-transparent" />
               </div>
 

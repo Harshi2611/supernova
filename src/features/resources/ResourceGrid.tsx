@@ -55,6 +55,7 @@ export default function ResourceGrid() {
                <Image 
                  src={article.image} 
                  alt={article.title}
+                 fill
                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                />
                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-md text-[10px] font-bold tracking-wider text-slate-800 uppercase shadow-sm">

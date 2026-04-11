@@ -58,11 +58,14 @@ export default function HomeHero() {
           >
             <div className="relative w-full max-w-[500px] aspect-[4/5] lg:aspect-auto lg:h-full rounded-[2rem] overflow-hidden shadow-2xl z-10">
               {/* Replace with real image once copied */}
-              <Image
-                src="/focused_student_hero.png"
-                alt="Student Studying Intently"
-                className="w-full h-full object-cover object-center"
-              />
+              <div className="relative w-full h-[600px]">
+                <Image
+                  src="/focused_student_hero.png"
+                  alt="Student Studying Intently"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
             </div>
 

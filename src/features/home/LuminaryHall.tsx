@@ -36,18 +36,18 @@ export default function LuminaryHall() {
   return (
     <section className="py-24 bg-slate-50 border-t border-slate-200 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
           {/* Text Content */}
           <div className="max-w-xl">
             <h2 className="text-3xl md:text-5xl font-bold text-primary font-heading mb-6 leading-tight">
               The Luminary Hall
             </h2>
             <p className="text-slate-600 text-lg leading-relaxed mb-10">
-              Our students consistently redefine what is possible. Behind every top rank is a story of disciplined precision and the Nova Pulse methodology.
+              Our students consistently redefine what is possible. Behind every
+              top rank is a story of disciplined precision and the Nova Pulse
+              methodology.
             </p>
-            
+
             {/* Stat Cards */}
             <div className="space-y-4">
               <div className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
@@ -55,8 +55,12 @@ export default function LuminaryHall() {
                   <Trophy className="w-6 h-6" />
                 </div>
                 <div>
-                  <div className="text-lg font-bold text-primary font-heading leading-tight">98% in JEE Advanced</div>
-                  <div className="text-sm text-slate-500">Class of 2024 engineering divisions</div>
+                  <div className="text-lg font-bold text-primary font-heading leading-tight">
+                    98% in JEE Advanced
+                  </div>
+                  <div className="text-sm text-slate-500">
+                    Class of 2024 engineering divisions
+                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
@@ -64,8 +68,12 @@ export default function LuminaryHall() {
                   <Award className="w-6 h-6" />
                 </div>
                 <div>
-                  <div className="text-lg font-bold text-primary font-heading leading-tight">720/720 in NEET UG</div>
-                  <div className="text-sm text-slate-500">First perfect score for our medical batches</div>
+                  <div className="text-lg font-bold text-primary font-heading leading-tight">
+                    720/720 in NEET UG
+                  </div>
+                  <div className="text-sm text-slate-500">
+                    First perfect score for our medical batches
+                  </div>
                 </div>
               </div>
             </div>
@@ -74,23 +82,29 @@ export default function LuminaryHall() {
           {/* Grid Layout of Students */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 auto-rows-fr h-[600px] md:h-[700px]">
             {students.map((student, idx) => (
-              <div key={idx} className={`relative rounded-[2rem] overflow-hidden group ${student.span} ${student.height}`}>
-                <Image 
-                  src={student.image} 
-                  alt={student.name} 
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+              <div
+                key={idx}
+                className={`relative rounded-[2rem] overflow-hidden group ${student.span} ${student.height}`}
+              >
+                <Image
+                  src={student.image}
+                  alt={student.name}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#051d40]/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white text-left z-10">
-                  <div className="text-xl font-bold font-heading">{student.name}</div>
-                  <div className="text-xs font-medium tracking-widest uppercase opacity-80">{student.detail}</div>
+                  <div className="text-xl font-bold font-heading">
+                    {student.name}
+                  </div>
+                  <div className="text-xs font-medium tracking-widest uppercase opacity-80">
+                    {student.detail}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-
         </div>
-
       </div>
     </section>
   );

@@ -60,13 +60,16 @@ export default function FacultySection() {
               key={member.name}
               className="group bg-white rounded-2xl border border-[#E8F2FB] overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <Image
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-56 object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  className="object-cover"
                 />
+
                 <div className="absolute inset-0 bg-gradient-to-t from-[#00457D]/60 to-transparent" />
+
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <h3 className="text-white font-bold text-lg leading-tight">
                     {member.name}
