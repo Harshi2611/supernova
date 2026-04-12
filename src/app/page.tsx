@@ -4,11 +4,11 @@ import DigitalRevolutionCTA from "@/features/home/DigitalRevolutionCTA";
 import HomeHero from "@/features/home/HomeHero";
 import OurApproach from "@/features/home/OurApproach";
 import SNSTSection from "@/features/home/SNSTSection";
-import WhySupernova from "@/features/home/WhySupernova";
 import Testimonials from "@/features/home/Testimonials";
+import WhySupernova from "@/features/home/WhySupernova";
 
 export const metadata = {
-  title: "SuperNova Coaching Center | Ignite Your Future",
+  title: "SuperNova Learning Center",
   description:
     "Redefining Excellence through Precision. Integrated AI parameters for NEET and JEE mastery.",
 };

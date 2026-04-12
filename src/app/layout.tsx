@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "SuperNova Academy",
-  description: "SuperNova Coaching Center",
+  description: "SuperNova Learning Center",
   icons: {
     icon: "/logo.ico",
   },
