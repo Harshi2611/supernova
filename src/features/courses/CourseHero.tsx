@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { CheckCircle2, Star } from "lucide-react";
+import Image from "next/image";
 
 export default function CourseHero() {
   return (
@@ -8,7 +8,7 @@ export default function CourseHero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Text Content */}
           <div className="max-w-2xl animate-fade-in-up">
-            <div className="inline-flex items-center rounded-full border border-yellow-400 bg-yellow-50 px-3 py-1 text-sm font-medium text-yellow-800 mb-6 font-heading">
+            <div className="inline-flex items-center rounded-md border border-yellow-400 bg-yellow-50 px-3 py-1 text-sm font-medium text-yellow-800 mb-6 font-heading">
               ACADEMIC EXCELLENCE
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-05xl font-bold tracking-tight text-primary font-heading mb-6 leading-tight">
@@ -61,7 +61,7 @@ export default function CourseHero() {
             </div>
 
             {/* Decorative background shape */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-slate-100/50 -z-10 blur-3xl"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-md bg-slate-100/50 -z-10 blur-3xl"></div>
           </div>
         </div>
       </div>

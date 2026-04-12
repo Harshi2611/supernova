@@ -1,106 +1,72 @@
 "use client";
 
-import star from "@/assets/star.png";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, Star } from "lucide-react";
-import Image from "next/image";
+import { PlayCircle, Star } from "lucide-react";
 
 export default function HomeHero() {
   return (
-    <section className="relative overflow-hidden bg-[#eff6fb] min-h-[90vh] flex items-center pt-32 pb-16 lg:pt-40 lg:pb-24">
-      <div className="absolute top-0 right-0 w-[50%] h-[100%] bg-gradient-to-l from-[#dbe9f4] to-transparent z-0 hidden lg:block"></div>
+    <section className="relative overflow-hidden bg-[#eff6fb] min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-16 lg:pt-36 lg:pb-16">
+      {/* Background elements */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/60 via-transparent to-transparent pointer-events-none z-0"></div>
 
-      <div className="container mx-auto px-4 z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          {/* Text Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex flex-col max-w-2xl"
-          >
-            <div className="inline-flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-full text-xs font-bold border border-primary uppercase tracking-widest mb-8 self-start shadow-sm">
-              <Star className="w-3.5 h-3.5 fill-current text-primary" />
-              Education is passion
-            </div>
+      <div className="container  z-10 flex flex-col items-center text-center">
+        {/* Text Content */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-center max-w-4xl w-full"
+        >
+          <div className="inline-flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-md text-xs font-bold border border-primary/20 uppercase tracking-widest mb-8 shadow-sm">
+            <Star className="w-3.5 h-3.5 fill-current text-primary" />
+            Education is passion
+          </div>
 
-            <h1 className="text-5xl lg:text-7xl font-bold font-heading text-primary leading-[1.1] mb-6">
-              Transform Your Academic with SuperNova
-            </h1>
+          <h1 className="text-5xl lg:text-6xl font-bold font-heading text-primary leading-[1.1] mb-6 max-w-4xl tracking-tight">
+            Transform Your Academic with SuperNova
+          </h1>
 
-            <p className="text-lg text-slate-600 mb-10 max-w-xl font-sans leading-relaxed">
-              Personalized learning, expert guidance & proven results
-              <br className="hidden lg:block" /> for Grades 1<sup>st</sup> to 12
-              <sup>th</sup>, NEET & JEE aspirants.
-            </p>
+          <p className="text-base text-slate-600 mb-10 max-w-2xl font-sans leading-relaxed">
+            Personalized learning, expert guidance & proven results for Grades 1
+            <sup>st</sup> to 12<sup>th</sup>, NEET & JEE aspirants.
+          </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="h-14 px-8 bg-primary hover:bg-primary/90 text-white font-bold rounded-xl text-lg w-full sm:w-auto shadow-xl group">
-                Start Your Journey
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button
-                variant="outline"
-                className="h-14 px-8 border-slate-300 text-slate-700 hover:bg-slate-50 font-bold rounded-xl text-lg w-full sm:w-auto transition-colors"
-              >
-                Explore Courses
-              </Button>
-            </div>
-          </motion.div>
-
-          {/* Image & Overlay Content */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative lg:h-[600px] flex justify-center lg:justify-end"
-          >
-            <div className="relative w-full max-w-[500px] aspect-[4/5] lg:aspect-auto lg:h-[600px] rounded-[2rem] overflow-hidden shadow-2xl z-10">
-              <Image
-                src="/focused_student_hero.png"
-                alt="Student Studying Intently"
-                fill
-                className="object-cover object-[center_top]"
-                priority
-              />
-
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
-            </div>
-
-            {/* Floating overlay card */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              className="absolute bottom-[-1rem] lg:bottom-12 -left-4 lg:-left-12 bg-transparent backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/50 z-20 max-w-[280px]"
+          <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 mb-16 lg:mb-20 justify-center w-full items-center">
+            <Button
+              variant="ghost"
+              className="h-14 px-6 text-slate-700 hover:bg-slate-200/50 hover:text-slate-900 font-bold rounded-md text-base lg:text-lg w-full sm:w-auto transition-colors group"
             >
-              <div className="flex items-center gap-4">
-                {/* Icon */}
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-md shrink-0">
-                  <Image
-                    src={star} // put your image inside /public folder
-                    alt="Star"
-                    width={45}
-                    height={45}
-                    className="object-contain"
-                  />
-                </div>
+              <PlayCircle className="w-6 h-6 mr-2 text-slate-700 group-hover:text-slate-900 transition-colors" />
+              Start Your Journey
+            </Button>
+            <Button className="h-14 px-8 bg-primary hover:bg-primary/90 text-white font-bold rounded-md text-base lg:text-lg w-full sm:w-auto shadow-xl transition-all">
+              Explore Courses
+            </Button>
+          </div>
+        </motion.div>
 
-                {/* Text */}
-                <div className="flex flex-col justify-center">
-                  <div className="text-3xl font-bold text-primary font-heading leading-none">
-                    100%
-                  </div>
-                  <div className="text-xs text-slate-500 font-bold uppercase tracking-wider leading-tight">
-                    Improvement
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
+        {/* Video Content */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="w-full rounded-md lg:rounded-md overflow-hidden shadow-2xl relative bg-white ring-1 ring-slate-900/5 group"
+        >
+          <div className="aspect-video w-full bg-slate-100 flex items-center justify-center relative">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/bvo-tk-l5V8?si=ENxTl8j8iicxzFN6"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="w-full h-full absolute inset-0 rounded-md lg:rounded-md"
+            ></iframe>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

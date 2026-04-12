@@ -20,7 +20,7 @@ export default function AIEdge() {
           <div className="grid lg:grid-cols-3 gap-5">
             {/* Large: AI Doubt Solver */}
             <div className="lg:col-span-2 bg-gradient-to-br from-[#145da0] to-[#051d40] rounded-xl p-7 text-white relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-[#56aeff]/10 rounded-full -translate-x-4 -translate-y-8 blur-2xl" />
+              <div className="absolute top-0 right-0 w-40 h-40 bg-[#56aeff]/10 rounded-md -translate-x-4 -translate-y-8 blur-2xl" />
               <div className="relative z-10">
                 <div className="w-11 h-11 rounded-xl bg-[#56aeff]/20 border border-[#56aeff]/30 flex items-center justify-center mb-4 text-[#56aeff]">
                   <svg
@@ -147,7 +147,7 @@ export default function AIEdge() {
                   (step, i) => (
                     <div key={step} className="flex items-center gap-2">
                       <div
-                        className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                        className={`px-3 py-1 rounded-md text-xs font-semibold ${
                           i === 2
                             ? "bg-[#145da0] text-white"
                             : i < 2
@@ -185,7 +185,7 @@ export default function AIEdge() {
 
           {/* Large card: Personalized Trajectory */}
           <div className="bg-gradient-to-br from-[#145da0] to-[#051d40] rounded-xl p-5 text-white mb-4 relative overflow-hidden">
-            <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#56aeff]/10 rounded-full translate-x-8 translate-y-8 blur-xl" />
+            <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#56aeff]/10 rounded-md translate-x-8 translate-y-8 blur-xl" />
             <div className="w-9 h-9 rounded-lg bg-[#56aeff]/20 border border-[#56aeff]/30 flex items-center justify-center text-[#56aeff] mb-3">
               <svg
                 viewBox="0 0 24 24"

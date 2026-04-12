@@ -78,7 +78,7 @@ export default function InquiryModal() {
         {/* Close Button */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-4 right-4 z-50 p-2 bg-white/50 backdrop-blur-md rounded-full text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors"
+          className="absolute top-4 right-4 z-50 p-2 bg-white/50 backdrop-blur-md rounded-md text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
@@ -132,7 +132,7 @@ export default function InquiryModal() {
         <div className="w-full md:w-7/12 p-8 md:p-12 bg-white flex flex-col justify-center">
           {isSubmitted ? (
             <div className="text-center py-12 animate-in slide-in-from-bottom-4">
-              <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-green-50 rounded-md flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-green-500" />
               </div>
               <h3 className="text-3xl font-bold font-heading text-slate-800 mb-4">

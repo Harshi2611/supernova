@@ -43,7 +43,7 @@ export default function PulseEcosystem() {
           <div className="lg:col-span-2 relative overflow-hidden rounded-[2rem] bg-primary text-white p-10 h-[400px] flex flex-col justify-end shadow-xl group">
             {/* Background glow and image layer */}
             <div className="absolute inset-0 z-0 overflow-hidden">
-              <div className="absolute -right-20 -bottom-20 w-[600px] h-[600px] bg-secondary/20 rounded-full blur-3xl group-hover:bg-secondary/30 transition-colors duration-700"></div>
+              <div className="absolute -right-20 -bottom-20 w-[600px] h-[600px] bg-secondary/20 rounded-md blur-3xl group-hover:bg-secondary/30 transition-colors duration-700"></div>
               {/* We map a digital neural placeholder for the background pattern */}
               <div className="absolute inset-0 bg-[#051d40]/40 mix-blend-overlay"></div>
             </div>
@@ -67,7 +67,7 @@ export default function PulseEcosystem() {
                 signature.
               </p>
 
-              <div className="mt-8 inline-flex items-center text-xs font-bold tracking-widest uppercase bg-white text-primary px-4 py-2 rounded-full cursor-pointer hover:bg-slate-100 transition-colors">
+              <div className="mt-8 inline-flex items-center text-xs font-bold tracking-widest uppercase bg-white text-primary px-4 py-2 rounded-md cursor-pointer hover:bg-slate-100 transition-colors">
                 SEE HOW IT WORKS
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function PulseEcosystem() {
                 <div className="mt-4 w-full h-[120px] bg-slate-100 rounded-xl overflow-hidden relative">
                   <div className="absolute -bottom-10 right-4 p-4 bg-white shadow-xl rounded-t-xl border border-slate-200 w-48 text-xs font-bold text-slate-700">
                     <div className="flex gap-2 items-center mb-2">
-                      <div className="w-6 h-6 rounded-full bg-primary flex-shrink-0"></div>{" "}
+                      <div className="w-6 h-6 rounded-md bg-primary flex-shrink-0"></div>{" "}
                       Support Bot
                     </div>
                     <div className="bg-slate-100 p-2 rounded-md">

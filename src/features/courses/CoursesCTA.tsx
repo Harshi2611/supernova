@@ -8,21 +8,25 @@ export default function CoursesCTA() {
           Not sure which path to choose?
         </h2>
         <p className="text-slate-600 mb-10 max-w-xl mx-auto text-lg leading-relaxed">
-          Our career counselors are ready to help you map out your academic journey based on your strengths and aspirations.
+          Our career counselors are ready to help you map out your academic
+          journey based on your strengths and aspirations.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <Button className="font-bold px-8 py-6 h-auto w-full sm:w-auto text-sm tracking-wide bg-primary hover:bg-primary/90 text-white rounded-lg shadow-lg hover:shadow-primary/30 transition-all">
             BOOK FREE CONSULTATION
           </Button>
-          <Button variant="outline" className="font-bold px-8 py-6 h-auto w-full sm:w-auto text-sm tracking-wide bg-white border-slate-300 text-slate-700 hover:bg-slate-50 hover:text-primary rounded-lg shadow-sm">
+          <Button
+            variant="outline"
+            className="font-bold px-8 py-6 h-auto w-full sm:w-auto text-sm tracking-wide bg-white border-slate-300 text-slate-700 hover:bg-slate-50 hover:text-primary rounded-lg shadow-sm"
+          >
             DOWNLOAD PROSPECTUS
           </Button>
         </div>
       </div>
-      
+
       {/* Decorative background blur */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-full max-w-3xl h-64 bg-primary/5 rounded-full blur-3xl -z-0 pointer-events-none"></div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-full max-w-3xl h-64 bg-primary/5 rounded-md blur-3xl -z-0 pointer-events-none"></div>
     </section>
   );
 }

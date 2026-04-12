@@ -46,8 +46,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`font-semibold text-sm tracking-wide transition ${
                     isActive
-                      ? "text-[#00457D] border-b-2 border-[#00457D] pb-1"
-                      : "text-gray-600 hover:text-[#00457D]"
+                      ? "text-primary border-b-2 border-primary pb-1"
+                      : "text-gray-600 hover:text-primary"
                   }`}
                 >
                   {link.label}
@@ -59,7 +59,7 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button className="py-5 px-6 bg-[#00457D] uppercase font-semibold text-base rounded-md">
+          <Button className="py-5 px-6 bg-primary uppercase font-semibold text-base rounded-md">
             Enroll Now
           </Button>
         </div>

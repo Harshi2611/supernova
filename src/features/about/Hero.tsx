@@ -10,14 +10,14 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-gradient-to-br from-[#E8F2FB] via-white to-amber-50/40"
     >
-      <div className="absolute top-24 right-0 w-[500px] h-[500px] rounded-full bg-[#00457D]/5 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-0 w-[400px] h-[400px] rounded-full bg-[#C8960C]/5 blur-3xl pointer-events-none" />
+      <div className="absolute top-24 right-0 w-[500px] h-[500px] rounded-md bg-[#00457D]/5 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 left-0 w-[400px] h-[400px] rounded-md bg-[#C8960C]/5 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-4rem)]">
           <div className="flex flex-col justify-center">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-6 text-xs font-semibold tracking-widest uppercase rounded-md bg-[#C8960C]/10 text-[#C8960C] border border-[#C8960C]/20 w-fit">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C8960C] animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-md bg-[#C8960C] animate-pulse" />
               Established 1983
             </div>
 
@@ -108,7 +108,7 @@ export default function Hero() {
                 style={{ transform: "rotate(-2deg)" }}
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                  <div className="w-12 h-12 rounded-md bg-green-100 flex items-center justify-center shrink-0">
                     <span className="text-green-700 font-bold text-sm">
                       98%
                     </span>

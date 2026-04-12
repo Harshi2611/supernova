@@ -11,12 +11,12 @@ export default function CTABanner() {
         background: "linear-gradient(135deg, #00457D 0%, #002d52 100%)",
       }}
     >
-      <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-white/5 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-[#C8960C]/10 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 rounded-md bg-white/5 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 rounded-md bg-[#C8960C]/10 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-6 text-xs font-semibold tracking-widest uppercase rounded-full bg-white/10 text-[#C8960C] border border-white/10">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#C8960C] animate-pulse" />
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-6 text-xs font-semibold tracking-widest uppercase rounded-md bg-white/10 text-[#C8960C] border border-white/10">
+          <span className="w-1.5 h-1.5 rounded-md bg-[#C8960C] animate-pulse" />
           Admissions Open
         </div>
 

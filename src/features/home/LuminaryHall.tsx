@@ -6,31 +6,35 @@ export default function LuminaryHall() {
     {
       name: "Aditi Sharma",
       detail: "JEE Advance AIR 15",
-      image: "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop",
       span: "md:col-span-1 md:row-span-2",
-      height: "h-[300px] md:h-full"
+      height: "h-[300px] md:h-full",
     },
     {
       name: "Siddharth M",
       detail: "NEET 720/720",
-      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800&auto=format&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800&auto=format&fit=crop",
       span: "md:col-span-1 md:row-span-1",
-      height: "h-[300px]"
+      height: "h-[300px]",
     },
     {
       name: "Rohan Verma",
       detail: "IIT Bombay CS",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
       span: "md:col-span-1 md:row-span-1",
-      height: "h-[300px]"
+      height: "h-[300px]",
     },
     {
       name: "Priya Kapoor",
       detail: "AIIMS Delhi",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
       span: "md:col-span-1 md:row-span-1",
-      height: "h-[300px]"
-    }
+      height: "h-[300px]",
+    },
   ];
 
   return (
@@ -51,7 +55,7 @@ export default function LuminaryHall() {
             {/* Stat Cards */}
             <div className="space-y-4">
               <div className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-[#fdeecf] text-secondary flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-md bg-[#fdeecf] text-secondary flex items-center justify-center shrink-0">
                   <Trophy className="w-6 h-6" />
                 </div>
                 <div>
@@ -64,7 +68,7 @@ export default function LuminaryHall() {
                 </div>
               </div>
               <div className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-[#fdeecf] text-secondary flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-md bg-[#fdeecf] text-secondary flex items-center justify-center shrink-0">
                   <Award className="w-6 h-6" />
                 </div>
                 <div>

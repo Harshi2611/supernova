@@ -27,7 +27,7 @@ export default function SuperNovaOdyssey() {
           <div className="lg:col-span-1 space-y-6">
             <div className="bg-[#F7FAFD] rounded-2xl p-7 border border-[#E8F2FB]">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-[#E8F2FB] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-md bg-[#E8F2FB] flex items-center justify-center">
                   <Sparkles className="w-5 h-5 text-[#00457D]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#00457D]">

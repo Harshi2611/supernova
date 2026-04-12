@@ -8,22 +8,25 @@ export default function TailoredPathways() {
       title: "NEET Ultimate Precision",
       desc: "Comprehensive biology, chemistry, and physics modules designed specifically for top medical entrance exams.",
       bgColor: "bg-slate-50",
-      image: "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=800&auto=format&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=800&auto=format&fit=crop",
     },
     {
       label: "ENGINEERING",
       title: "JEE Main & Advanced",
       desc: "Maximum problem-solving techniques and rigorous mathematics training for IIT aspirant success.",
       bgColor: "bg-slate-50",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
+      image:
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop",
     },
     {
       label: "FOUNDATION",
       title: "Pre-Foundation Ignite",
       desc: "Building a bullet-proof base in logic and core science for students in grades 8 to 10.",
       bgColor: "bg-slate-50",
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop"
-    }
+      image:
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop",
+    },
   ];
 
   return (
@@ -79,7 +82,7 @@ export default function TailoredPathways() {
                 </p>
 
                 <div className="flex items-center justify-between pt-6 border-t border-slate-200 mt-auto">
-                  <span className="text-xs font-bold text-slate-500 uppercase tracking-widest bg-slate-100 px-3 py-1.5 rounded-full">
+                  <span className="text-xs font-bold text-slate-500 uppercase tracking-widest bg-slate-100 px-3 py-1.5 rounded-md">
                     Syllabus Live
                   </span>
                   <span className="text-sm font-bold text-primary flex items-center gap-1 group-hover:gap-2 transition-all">

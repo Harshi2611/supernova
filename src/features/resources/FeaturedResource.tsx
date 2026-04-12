@@ -20,7 +20,7 @@ export default function FeaturedResource() {
 
         <div className="relative z-10 flex flex-col justify-end h-[500px] p-10">
           <div className="flex items-center gap-4 mb-4">
-            <span className="bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
+            <span className="bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-md">
               AI IN EDUCATION
             </span>
           </div>
@@ -64,7 +64,7 @@ export default function FeaturedResource() {
         </Button>
 
         <div className="flex items-center gap-4 pt-6 border-t border-slate-200 mt-auto">
-          <div className="relative w-12 h-12 rounded-full overflow-hidden bg-slate-200 shrink-0 border border-slate-300">
+          <div className="relative w-12 h-12 rounded-md overflow-hidden bg-slate-200 shrink-0 border border-slate-300">
             <Image
               src="https://i.pravatar.cc/150?img=11"
               alt="Author"

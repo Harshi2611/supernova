@@ -142,7 +142,7 @@ export default function LegacySection() {
 
                 <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 flex-col items-center z-10">
                   <div
-                    className={`w-10 h-10 rounded-full flex items-center justify-center border-2 shadow-sm ${
+                    className={`w-10 h-10 rounded-md flex items-center justify-center border-2 shadow-sm ${
                       item.highlight
                         ? "bg-[#C8960C] border-[#C8960C] text-white"
                         : "bg-white border-[#00457D] text-[#00457D]"
@@ -155,7 +155,7 @@ export default function LegacySection() {
                 </div>
 
                 <div className="md:hidden flex items-center gap-3 mb-3 mt-2">
-                  <div className="w-8 h-8 rounded-full bg-[#00457D] flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-md bg-[#00457D] flex items-center justify-center shrink-0">
                     <Calendar className="w-3.5 h-3.5 text-white" />
                   </div>
                   <span className="text-sm font-bold text-[#00457D]">
@@ -172,9 +172,9 @@ export default function LegacySection() {
             {["2022", "2025"].map((year) => (
               <div
                 key={year}
-                className="flex items-center gap-2 bg-white border border-border rounded-full px-4 py-2"
+                className="flex items-center gap-2 bg-white border border-border rounded-md px-4 py-2"
               >
-                <div className="w-2 h-2 rounded-full bg-[#C8960C]" />
+                <div className="w-2 h-2 rounded-md bg-[#C8960C]" />
                 <span className="text-xs font-semibold text-gray-500">
                   {year}
                 </span>

@@ -6,7 +6,7 @@ export default function CTASection() {
       {/* ── DESKTOP CTA ── */}
       <section className="hidden md:block py-16 lg:py-24 bg-[#051d40] relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#145da0]/25 rounded-full blur-[100px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#145da0]/25 rounded-md blur-[100px]" />
           {/* Corner starburst */}
           <svg
             viewBox="0 0 120 120"

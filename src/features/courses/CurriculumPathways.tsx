@@ -1,12 +1,18 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Calculator, ArrowRight } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { ArrowRight, BookOpen, Calculator } from "lucide-react";
 
 export default function CurriculumPathways() {
   return (
     <section className="py-20 bg-slate-50 relative">
       <div className="container mx-auto px-4 md:px-6">
-        
         {/* Header and Filters */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
@@ -17,12 +23,32 @@ export default function CurriculumPathways() {
               Tailored academic journeys for every ambition.
             </p>
           </div>
-          
+
           <div className="flex space-x-2">
-            <Button variant="outline" className="rounded-full bg-white text-slate-700 hover:text-primary">All Grades</Button>
-            <Button variant="ghost" className="rounded-full text-slate-500 hover:text-primary">Foundation</Button>
-            <Button variant="ghost" className="rounded-full text-slate-500 hover:text-primary">Science</Button>
-            <Button variant="ghost" className="rounded-full text-slate-500 hover:text-primary">Commerce</Button>
+            <Button
+              variant="outline"
+              className="rounded-md bg-white text-slate-700 hover:text-primary"
+            >
+              All Grades
+            </Button>
+            <Button
+              variant="ghost"
+              className="rounded-md text-slate-500 hover:text-primary"
+            >
+              Foundation
+            </Button>
+            <Button
+              variant="ghost"
+              className="rounded-md text-slate-500 hover:text-primary"
+            >
+              Science
+            </Button>
+            <Button
+              variant="ghost"
+              className="rounded-md text-slate-500 hover:text-primary"
+            >
+              Commerce
+            </Button>
           </div>
         </div>
 
@@ -42,30 +68,45 @@ export default function CurriculumPathways() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 text-primary">
                   <BookOpen className="w-6 h-6" />
                 </div>
-                <CardTitle className="text-xl text-primary font-heading">Junior Scholars</CardTitle>
+                <CardTitle className="text-xl text-primary font-heading">
+                  Junior Scholars
+                </CardTitle>
                 <CardDescription className="text-slate-500 mt-2 line-clamp-2">
-                  Developing logical reasoning and scientific inquiry for grades 5 & 6.
+                  Developing logical reasoning and scientific inquiry for grades
+                  5 & 6.
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center mt-0.5 shrink-0">
-                      <span className="text-accent text-[10px] font-bold">✓</span>
+                    <div className="w-5 h-5 rounded-md bg-accent/20 flex items-center justify-center mt-0.5 shrink-0">
+                      <span className="text-accent text-[10px] font-bold">
+                        ✓
+                      </span>
                     </div>
-                    <span className="text-sm font-semibold text-slate-700">Mental Ability</span>
+                    <span className="text-sm font-semibold text-slate-700">
+                      Mental Ability
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center mt-0.5 shrink-0">
-                      <span className="text-accent text-[10px] font-bold">✓</span>
+                    <div className="w-5 h-5 rounded-md bg-accent/20 flex items-center justify-center mt-0.5 shrink-0">
+                      <span className="text-accent text-[10px] font-bold">
+                        ✓
+                      </span>
                     </div>
-                    <span className="text-sm font-semibold text-slate-700">Science Olympiad</span>
+                    <span className="text-sm font-semibold text-slate-700">
+                      Science Olympiad
+                    </span>
                   </li>
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" className="w-full justify-between px-0 font-bold text-slate-500 hover:text-primary group">
-                  EXPLORE <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                <Button
+                  variant="ghost"
+                  className="w-full justify-between px-0 font-bold text-slate-500 hover:text-primary group"
+                >
+                  EXPLORE{" "}
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </CardFooter>
             </Card>
@@ -76,36 +117,50 @@ export default function CurriculumPathways() {
                 <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-4 text-primary">
                   <Calculator className="w-6 h-6" />
                 </div>
-                <CardTitle className="text-xl text-primary font-heading">Pre-Foundation</CardTitle>
+                <CardTitle className="text-xl text-primary font-heading">
+                  Pre-Foundation
+                </CardTitle>
                 <CardDescription className="text-slate-500 mt-2 line-clamp-2">
-                  Intensive bridge course for Grades 7 & 8 focusing on advanced mathematics.
+                  Intensive bridge course for Grades 7 & 8 focusing on advanced
+                  mathematics.
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center mt-0.5 shrink-0">
-                      <span className="text-accent text-[10px] font-bold">✓</span>
+                    <div className="w-5 h-5 rounded-md bg-accent/20 flex items-center justify-center mt-0.5 shrink-0">
+                      <span className="text-accent text-[10px] font-bold">
+                        ✓
+                      </span>
                     </div>
-                    <span className="text-sm font-semibold text-slate-700">Algebra Mastery</span>
+                    <span className="text-sm font-semibold text-slate-700">
+                      Algebra Mastery
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center mt-0.5 shrink-0">
-                      <span className="text-accent text-[10px] font-bold">✓</span>
+                    <div className="w-5 h-5 rounded-md bg-accent/20 flex items-center justify-center mt-0.5 shrink-0">
+                      <span className="text-accent text-[10px] font-bold">
+                        ✓
+                      </span>
                     </div>
-                    <span className="text-sm font-semibold text-slate-700">Physics Basics</span>
+                    <span className="text-sm font-semibold text-slate-700">
+                      Physics Basics
+                    </span>
                   </li>
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" className="w-full justify-between px-0 font-bold text-slate-500 hover:text-primary group">
-                  EXPLORE <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                <Button
+                  variant="ghost"
+                  className="w-full justify-between px-0 font-bold text-slate-500 hover:text-primary group"
+                >
+                  EXPLORE{" "}
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </CardFooter>
             </Card>
           </div>
         </div>
-
       </div>
     </section>
   );

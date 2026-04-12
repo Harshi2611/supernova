@@ -59,7 +59,7 @@ export default function HallOfFame() {
                 <div
                   className={`h-28 bg-gradient-to-br ${t.bg} flex items-center justify-center relative`}
                 >
-                  <div className="absolute top-2 left-2 bg-white/10 text-white text-[10px] font-bold px-2 py-0.5 rounded-full border border-white/20">
+                  <div className="absolute top-2 left-2 bg-white/10 text-white text-[10px] font-bold px-2 py-0.5 rounded-md border border-white/20">
                     #{i + 1}
                   </div>
                   {/* Avatar circles */}
@@ -67,7 +67,7 @@ export default function HallOfFame() {
                     {[...Array(3)].map((_, j) => (
                       <div
                         key={j}
-                        className="absolute rounded-full border border-white/10"
+                        className="absolute rounded-md border border-white/10"
                         style={{
                           width: `${56 + j * 22}px`,
                           height: `${56 + j * 22}px`,
@@ -78,7 +78,7 @@ export default function HallOfFame() {
                         }}
                       />
                     ))}
-                    <div className="w-14 h-14 rounded-full bg-white/20 border-2 border-white/40 flex items-center justify-center text-white font-bold text-lg relative z-10">
+                    <div className="w-14 h-14 rounded-md bg-white/20 border-2 border-white/40 flex items-center justify-center text-white font-bold text-lg relative z-10">
                       {t.initials}
                     </div>
                   </div>
@@ -92,7 +92,7 @@ export default function HallOfFame() {
                     <span className="font-bold text-emerald-600 text-sm">
                       {t.result}
                     </span>
-                    <span className="text-[11px] text-[#145da0] bg-[#e6f1fb] px-2 py-0.5 rounded-full font-medium">
+                    <span className="text-[11px] text-[#145da0] bg-[#e6f1fb] px-2 py-0.5 rounded-md font-medium">
                       {t.rank}
                     </span>
                   </div>
@@ -118,7 +118,7 @@ export default function HallOfFame() {
             {/* Main topper card */}
             <div className="flex-shrink-0 w-[200px] snap-start rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm">
               <div className="h-24 bg-gradient-to-br from-[#145da0] to-[#051d40] flex items-center justify-center relative">
-                <div className="w-12 h-12 rounded-full bg-white/20 border-2 border-white/40 flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 rounded-md bg-white/20 border-2 border-white/40 flex items-center justify-center text-white font-bold">
                   AS
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function HallOfFame() {
             {/* Second card */}
             <div className="flex-shrink-0 w-[200px] snap-start rounded-xl overflow-hidden border border-gray-200 bg-white shadow-sm">
               <div className="h-24 bg-gradient-to-br from-[#0a6b5e] to-[#064035] flex items-center justify-center relative">
-                <div className="w-12 h-12 rounded-full bg-white/20 border-2 border-white/40 flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 rounded-md bg-white/20 border-2 border-white/40 flex items-center justify-center text-white font-bold">
                   SG
                 </div>
               </div>

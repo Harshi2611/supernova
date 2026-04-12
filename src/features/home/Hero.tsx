@@ -10,8 +10,8 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-amber-50/30"
     >
       {/* Decorative shapes */}
-      <div className="absolute top-20 right-0 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-secondary/5 blur-3xl" />
+      <div className="absolute top-20 right-0 w-96 h-96 rounded-md bg-primary/5 blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 rounded-md bg-secondary/5 blur-3xl" />
 
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -93,7 +93,7 @@ const HeroSection = () => {
               className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4 border border-border"
             >
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-md bg-green-100 flex items-center justify-center">
                   <span className="text-green-600 font-bold text-lg">98%</span>
                 </div>
                 <div>
