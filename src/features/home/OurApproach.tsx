@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, FileCheck, Star, Video } from "lucide-react";
+import { FileCheck, Star, Video } from "lucide-react";
 import Image from "next/image";
 
 export default function OurApproach() {
@@ -28,14 +28,8 @@ export default function OurApproach() {
                 Our Approach
               </h4>
               <h2 className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold font-heading text-primary leading-[1.15] tracking-tight">
-                Culture is at the heart of everything we do!
+                Learning that builds confidence, not pressure
               </h2>
-              <p className="text-[1.05rem] text-slate-600 leading-relaxed font-medium max-w-lg pt-2">
-                ASL and Deaf culture shape how we connect, express and live. We
-                want to educate students in a way that shows respect to the Deaf
-                community while spreading awareness. We welcome all students of
-                any background to learn with us about this rich community!
-              </p>
             </div>
 
             {/* List Attributes */}
@@ -47,10 +41,11 @@ export default function OurApproach() {
                 </div>
                 <div className="flex flex-col pt-1.5">
                   <h3 className="text-lg font-bold text-primary mb-1">
-                    Supportive Community
+                    Concept First, Always
                   </h3>
                   <p className="text-[0.95rem] text-slate-600 leading-snug">
-                    We create a positive environment focused on inclusivity
+                    We focus on building strong fundamentals so students truly
+                    understand every topic instead of just memorizing.
                   </p>
                 </div>
               </div>
@@ -62,10 +57,11 @@ export default function OurApproach() {
                 </div>
                 <div className="flex flex-col pt-1.5">
                   <h3 className="text-lg font-bold text-primary mb-1">
-                    Flexible Lesson Videos
+                    Consistent Practice & Tracking
                   </h3>
                   <p className="text-[0.95rem] text-slate-600 leading-snug">
-                    Students can learn at their own pace
+                    Regular tests, MCQs, and performance analysis help students
+                    improve step by step with clear direction.
                   </p>
                 </div>
               </div>
@@ -77,21 +73,14 @@ export default function OurApproach() {
                 </div>
                 <div className="flex flex-col pt-1.5">
                   <h3 className="text-lg font-bold text-primary mb-1">
-                    Practical Application
+                    Personal Attention & Guidance
                   </h3>
                   <p className="text-[0.95rem] text-slate-600 leading-snug">
-                    Learn content to help you become conversationally fluent
+                    Small batches and continuous support ensure every student
+                    gets the attention, motivation, and doubt-solving they need.
                   </p>
                 </div>
               </div>
-            </div>
-
-            {/* CTA Button */}
-            <div className="pt-6">
-              <button className="inline-flex items-center gap-2.5 border-[2px] border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-md font-bold transition-all group shadow-sm hover:shadow-md">
-                Read More
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
             </div>
           </div>
         </div>

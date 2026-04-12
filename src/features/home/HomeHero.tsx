@@ -23,13 +23,17 @@ export default function HomeHero() {
             Education is passion
           </div>
 
-          <h1 className="text-5xl lg:text-6xl font-bold font-heading text-primary leading-[1.1] mb-6 max-w-4xl tracking-tight">
+          <h1 className="text-5xl lg:text-6xl font-bold font-heading text-primary leading-[1.1] mb-4 max-w-7xl tracking-tight lg:whitespace-nowrap ">
             Transform Your Academic with SuperNova
           </h1>
 
           <p className="text-base text-slate-600 mb-10 max-w-2xl font-sans leading-relaxed">
-            Personalized learning, expert guidance & proven results for Grades 1
-            <sup>st</sup> to 12<sup>th</sup>, NEET & JEE aspirants.
+            <span className="text-4xl text-primary">
+              Grade: 1<sup>st</sup> to 12<sup>th</sup>
+            </span>
+            <span className="text-primary font-bold">
+              <br /> SCIENCE | COMMERCE | HUMANITIES
+            </span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 mb-16 lg:mb-20 justify-center w-full items-center">

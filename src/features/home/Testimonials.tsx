@@ -195,7 +195,7 @@ export default function Testimonials() {
 
   return (
     <section className="py-20 lg:py-32 bg-[#fafafa] overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container">
         {/* HEADER */}
         <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16">
           <div className="space-y-6 max-w-2xl">

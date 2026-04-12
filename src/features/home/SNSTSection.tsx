@@ -8,25 +8,25 @@ import { useState } from "react";
 const snstData = [
   {
     id: 1,
-    title: "1. SuperNova Scholarship Test",
+    title: "1. Merit-Based Entry",
     description:
-      "Take the SNST to evaluate your potential and secure up to 100% scholarship on our regular classroom programs. Available for students from 5th to 12th standard.",
+      "Students qualify through a structured SNST scholarship test designed to evaluate real understanding and potential.Only deserving and committed students get selected.",
     buttonText: "Explore More",
     buttonLink: "#",
   },
   {
     id: 2,
-    title: "2. Zero Fees Admission",
+    title: "2. Zero Fees Learning",
     description:
-      "Based on your SNST score, you can study with absolute zero tuition fees. We believe financial constraints should never stop true talent from shining.",
+      "Selected students can study without paying upfront fees, getting full access to SuperNova’s teaching, test series, and mentorship system.",
     buttonText: "Learn More",
     buttonLink: "#",
   },
   {
     id: 3,
-    title: "3. Mentorship & Guidelines",
+    title: "3. Performance-Driven Continuation",
     description:
-      "Top performers not only get fee waivers but also one-on-one specialized mentorship from expert faculties to excel in NEET and JEE exams.",
+      "The program continues based on regular performance, discipline, and consistency — rewarding students who stay committed to growth.",
     buttonText: "Find out how",
     buttonLink: "#",
   },
@@ -50,10 +50,14 @@ export default function SNSTSection() {
               Zero Fees Program
             </h2>
             <p className="text-lg text-slate-600 max-w-xl leading-relaxed">
-              SuperNova Scholarship Test Program provides an incredible
-              opportunity to learn from the best with up to 100% fee waiver.
-              Join us in creating a bright and barrier-free academic future!
+              SuperNova’s SNST (SuperNova Scholarship & Talent Program) is built
+              for students who have talent, dedication, and ambition — but need
+              the right opportunity.
             </p>
+            <button className="mt-8 inline-flex items-center gap-3 border border-primary text-primary hover:bg-primary hover:text-white rounded-xl px-4 py-3 text-base font-semibold transition-all duration-300 group shadow-sm hover:shadow-md w-fit">
+              Join Now
+              <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+            </button>
           </div>
           {/* Right Column of Header Row is strictly empty. The image from the row below pops up into this space! */}
           <div className="hidden lg:block relative"></div>
@@ -104,10 +108,6 @@ export default function SNSTSection() {
                           <p className="text-slate-600 text-[1.05rem] leading-relaxed mb-8 pr-4">
                             {item.description}
                           </p>
-                          <button className="inline-flex items-center gap-2 bg-white border border-primary text-primary hover:bg-primary hover:text-white rounded-md px-5 py-2.5 text-sm font-bold transition-all group shadow-sm">
-                            {item.buttonText}
-                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                          </button>
                         </motion.div>
                       )}
                     </AnimatePresence>

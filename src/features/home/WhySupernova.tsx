@@ -1,44 +1,49 @@
 "use client";
 
-import {
-  Banknote,
-  BookOpen,
-  Clock,
-  GraduationCap,
-  TrendingUp,
-  User,
-} from "lucide-react";
+import pay1 from "@/assets/Pay1.svg";
+import pay2 from "@/assets/Pay2.svg";
+import pay3 from "@/assets/Pay3.svg";
+import pay4 from "@/assets/Pay4.svg";
+import pay5 from "@/assets/Pay5.svg";
+import pay6 from "@/assets/Pay6.svg";
+import Image from "next/image";
 
 export default function WhySupernova() {
   // Using lucide-react icons as simple placeholders; these can easily be swapped with your custom SVGs
   const features = [
     {
-      icon: <User className="w-14 h-14 stroke-[1.5px]" />,
+      id: 1,
+      icon: pay1,
       title: "Personal",
       subtitle: "tuition concept",
     },
     {
-      icon: <Clock className="w-14 h-14 stroke-[1.5px]" />,
+      id: 2,
+      icon: pay2,
       title: "Limited student,",
       subtitle: "Unlimited time",
     },
     {
-      icon: <TrendingUp className="w-14 h-14 stroke-[1.5px]" />,
+      id: 3,
+      icon: pay3,
       title: "100% guaranteed",
       subtitle: "improvement",
     },
     {
-      icon: <GraduationCap className="w-14 h-14 stroke-[1.5px]" />,
+      id: 4,
+      icon: pay4,
       title: "Expert & experienced",
       subtitle: "faculties",
     },
     {
-      icon: <BookOpen className="w-14 h-14 stroke-[1.5px]" />,
+      id: 5,
+      icon: pay5,
       title: "Chapterwise",
       subtitle: "coaching",
     },
     {
-      icon: <Banknote className="w-14 h-14 stroke-[1.5px]" />,
+      id: 6,
+      icon: pay6,
       title: "Pay",
       subtitle: "chapterwise",
     },
@@ -57,18 +62,26 @@ export default function WhySupernova() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-16 lg:gap-y-24 gap-x-8">
-          {features.map((feature, idx) => (
+          {features.map((feature) => (
             <div
-              key={idx}
+              key={feature.id}
               className="flex flex-col items-center text-center group"
             >
-              <div className="text-[#facc15] mb-6 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 drop-shadow-[0_0_15px_rgba(250,204,21,0.2)]">
-                {/* SVG/Icon Container */}
-                {feature.icon}
+              <div className="mb-6 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300">
+                <div className="relative w-25 h-25">
+                  <Image
+                    src={feature.icon}
+                    alt={feature.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
+
               <h3 className="text-xl md:text-[1.35rem] font-bold leading-tight mb-2">
                 {feature.title}
               </h3>
+
               <p className="text-base text-slate-600 font-medium tracking-wide">
                 {feature.subtitle}
               </p>
