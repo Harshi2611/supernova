@@ -1,11 +1,11 @@
 "use client";
 
-import pay1 from "@/assets/Pay1.svg";
-import pay2 from "@/assets/Pay2.svg";
-import pay3 from "@/assets/Pay3.svg";
-import pay4 from "@/assets/Pay4.svg";
-import pay5 from "@/assets/Pay5.svg";
-import pay6 from "@/assets/Pay6.svg";
+import pay1 from "@/assets/pay1.svg";
+import pay2 from "@/assets/pay2.svg";
+import pay3 from "@/assets/pay3.svg";
+import pay4 from "@/assets/pay4.svg";
+import pay5 from "@/assets/pay5.svg";
+import pay6 from "@/assets/pay6.svg";
 import Image from "next/image";
 
 export default function WhySupernova() {
