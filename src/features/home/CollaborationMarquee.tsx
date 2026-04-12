@@ -57,52 +57,51 @@ const dummyLogos: React.ReactNode[] = allLogos.map((logo, index) => (
 ));
 export default function CollaborationMarquee() {
   return (
-    <section className="border-b border-t border-slate-100 bg-white py-6 md:py-8 overflow-hidden">
-      <div className="container">
-        <div className="flex flex-col md:flex-row items-center h-full">
-          {/* Left Text Block */}
-          <div className="w-full md:w-auto shrink-0 md:pr-10 md:border-r z-20 relative mb-4 md:mb-0 hidden md:flex items-center justify-center h-[80px]">
-            <Image
-              src={sinhar}
-              width={200}
-              height={60}
-              alt="Sinhar Logo"
-              className="pr-4"
-            />
-          </div>
-
-          {/* Marquee Container */}
-          <div className="relative flex-1 w-full flex items-center h-[90px] md:h-[90px] md:ml-8 overflow-hidden">
+    <section className="border-primary border-y-4 bg-white overflow-hidden">
+      <div className="flex flex-col md:flex-row items-stretch h-[100px]">
+        {/* ← moved flex outside container */}
+        {/* Sinhar - full bleed left with bg-primary */}
+        <div className="hidden md:flex bg-primary rounded-r-full shrink-0 items-center justify-center pl-20 h-full">
+          <Image
+            src={sinhar}
+            width={280}
+            height={90}
+            alt="Sinhar Logo"
+            className=""
+            unoptimized
+          />
+        </div>
+        {/* Right side stays in container */}
+        <div className="container  flex-1 flex items-center overflow-hidden">
+          <div className="relative flex-1 w-full flex items-center h-[90px] overflow-hidden">
             {/* Sticky SuperNova Logo */}
-            <div className="flex items-center shrink-0 pr-6 md:pr-6 bg-white z-20">
+            <div className="flex items-center bg-white z-20">
               <Image
                 src={supernova}
                 alt="SuperNova Logo"
-                width={200}
+                width={280}
                 height={60}
-                className=""
                 priority
+                unoptimized
               />
             </div>
 
-            {/* Marquee (starts EXACTLY after logo) */}
+            {/* Marquee */}
             <div className="flex-1 overflow-hidden relative">
               <motion.div
                 animate={{ x: [0, "-50%"] }}
-                transition={{ repeat: Infinity, ease: "linear", duration: 20 }}
+                transition={{ repeat: Infinity, ease: "linear", duration: 25 }}
                 className="flex items-center gap-6 md:gap-10 min-w-max"
               >
                 {[...dummyLogos, ...dummyLogos].map((logo, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center justify-center shrink-0 transition-opacity duration-300 cursor-pointer opacity-60 hover:opacity-100"
+                    className="flex items-center justify-center duration-300 cursor-pointer"
                   >
                     {logo}
                   </div>
                 ))}
               </motion.div>
-
-              {/* Right fade */}
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none z-10" />
             </div>
           </div>
