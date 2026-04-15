@@ -1,19 +1,17 @@
-import Hero from "@/features/about/Hero";
-import SuperNovaOdyssey from "../../features/about/SuperNovaOdyssey";
-import LegacySection from "@/features/about/LegacySection";
+import DynamicBannerCTA from "@/components/DynamicBannerCTA";
 import FacultySection from "@/features/about/FacultySection";
-import EnvironmentSection from "@/features/about/EnvironmentSection";
-import CTABanner from "@/features/about/CTABanner";
+import Hero from "@/features/about/Hero";
 
 function page() {
   return (
     <main className="min-h-screen">
       <Hero />
-      <SuperNovaOdyssey />
-      <LegacySection />
       <FacultySection />
-      <EnvironmentSection />
-      <CTABanner />
+      <DynamicBannerCTA
+        headline="Take your first step into SuperNova— curated lessons, community access, learn at your pace."
+        buttonText="Start Learning Today!"
+        imageSrc="/focused_student_hero.png"
+      />
     </main>
   );
 }

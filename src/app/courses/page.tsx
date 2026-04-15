@@ -1,8 +1,7 @@
+import DynamicBannerCTA from "@/components/DynamicBannerCTA";
 import CourseHero from "../../features/courses/CourseHero";
 import CurriculumPathways from "../../features/courses/CurriculumPathways";
-import Methodology from "../../features/courses/Methodology";
-import AdvancedPrograms from "../../features/courses/AdvancedPrograms";
-import CoursesCTA from "../../features/courses/CoursesCTA";
+import VideoShowcase from "../../features/courses/VideoShowcase";
 
 export const metadata = {
   title: "Programs & Courses | SuperNova Coaching Center",
@@ -14,9 +13,12 @@ export default function CoursesPage() {
     <main className="flex-1 w-full bg-white flex flex-col">
       <CourseHero />
       <CurriculumPathways />
-      <Methodology />
-      <AdvancedPrograms />
-      <CoursesCTA />
+      <VideoShowcase />
+      <DynamicBannerCTA
+        headline="Ready to Start Your Stellar Journey?"
+        buttonText="Start Learning Today!"
+        imageSrc="/focused_student_hero.png"
+      />
     </main>
   );
 }

@@ -20,11 +20,6 @@ export default function Home() {
       <CollaborationMarquee />
       <OurApproach />
       <WhySupernova />
-      {/* <StudyMaterial/> */}
-      {/* <PulseEcosystem /> */}
-      {/* <TailoredPathways /> */}
-      {/* <LuminaryHall /> */}
-      {/* <HomeCTA /> */}
       <SNSTSection />
       <DynamicBannerCTA
         headline="Take your first step into SuperNova— curated lessons, community access, learn at your pace."

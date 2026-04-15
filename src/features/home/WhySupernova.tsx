@@ -50,7 +50,7 @@ export default function WhySupernova() {
   ];
 
   return (
-    <section className="py-20 lg:py-32 bg-[#eff6fb]  text-primary relative overflow-hidden">
+    <section className="py-20 lg:py-16 bg-[#eff6fb]  text-primary relative overflow-hidden">
       {/* Optional subtle background gradient to keep it visually rich without image clutter */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/60 via-transparent to-transparent pointer-events-none z-0"></div>
 
@@ -68,7 +68,7 @@ export default function WhySupernova() {
               className="flex flex-col items-center text-center group"
             >
               <div className="mb-6 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300">
-                <div className="relative w-25 h-25">
+                <div className="relative w-40 h-40">
                   <Image
                     src={feature.icon}
                     alt={feature.title}
@@ -77,14 +77,14 @@ export default function WhySupernova() {
                   />
                 </div>
               </div>
-
+              {/* 
               <h3 className="text-xl md:text-[1.35rem] font-bold leading-tight mb-2">
                 {feature.title}
               </h3>
 
               <p className="text-base text-slate-600 font-medium tracking-wide">
                 {feature.subtitle}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>

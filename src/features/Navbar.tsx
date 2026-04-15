@@ -1,5 +1,6 @@
 "use client";
 
+import supernova from "@/assets/supernova.svg";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,10 +11,8 @@ import { Button } from "../components/ui/button";
 const navLinks = [
   { label: "HOME", href: "/" },
   { label: "COURSES", href: "/courses" },
-  // { label: "RESULTS", href: "/results" },
-  // { label: "CLUB", href: "/club" },
-  // { label: "CAREER", href: "/career" },
-  { label: "RESOURCES", href: "/resources" },
+  { label: "MATERIALS", href: "/materials" },
+  { label: "ARTICLES", href: "/articles" },
   { label: "ABOUT US", href: "/about" },
 ];
 
@@ -27,10 +26,10 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/supernova.png"
+            src={supernova}
             alt="SuperNova Logo"
-            width={150}
-            height={40}
+            width={200}
+            height={60}
             className="object-contain"
           />
         </Link>
