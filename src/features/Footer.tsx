@@ -60,8 +60,9 @@ export default function Footer() {
                 <MapPin className="w-6 h-6 text-white mt-1" fill="#016EB9" />
                 <div>
                   <p className="font-semibold text-primary">SuperNova</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">
-                    Nova Plaza, Tech Enclave, New Delhi - 110001
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    Ram Park Main Road <br />
+                    University Road, Rajkot
                   </p>
                 </div>
               </div>
@@ -70,8 +71,9 @@ export default function Footer() {
                 <MapPin className="w-6 h-6 text-white mt-1" fill="#016EB9" />
                 <div>
                   <p className="font-semibold text-primary">SuperNova 2.0</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">
-                    Stellar Heights, Innovation District, Mumbai - 400001
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    Siddhi Space, <br />
+                    Ambika Township, Rajkot
                   </p>
                 </div>
               </div>
@@ -86,13 +88,13 @@ export default function Footer() {
 
             <div className="flex flex-col gap-5 text-sm">
               <div className="flex gap-3 items-center text-slate-500 hover:text-primary transition">
-                <Mail className="w-5 h-5 text-white" fill="#016EB9" />
-                <span>admissions@supernova.edu</span>
+                <Mail className="w-5 h-5 text-[#016EB9]" />
+                <span className="text-sm">supernovarajkot@gmail.com</span>
               </div>
 
               <div className="flex gap-3 items-center text-slate-500 hover:text-primary transition">
                 <Phone className="w-5 h-5 text-white" fill="#016EB9" />
-                <span>1800-NOVA-PULSE</span>
+                <span className="text-sm">+91 99130 30369</span>
               </div>
             </div>
           </div>

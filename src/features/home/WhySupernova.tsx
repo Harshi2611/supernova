@@ -67,7 +67,7 @@ export default function WhySupernova() {
               key={feature.id}
               className="flex flex-col items-center text-center group"
             >
-              <div className="mb-6 transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300">
+              <div className="transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300">
                 <div className="relative w-40 h-40">
                   <Image
                     src={feature.icon}
@@ -77,14 +77,14 @@ export default function WhySupernova() {
                   />
                 </div>
               </div>
-              {/* 
-              <h3 className="text-xl md:text-[1.35rem] font-bold leading-tight mb-2">
+
+              <h3 className="text-xl md:text-2xl font-bold leading-tight mb-1">
                 {feature.title}
               </h3>
 
-              <p className="text-base text-slate-600 font-medium tracking-wide">
+              <p className="text-sm text-slate-600 font-medium tracking-wide">
                 {feature.subtitle}
-              </p> */}
+              </p>
             </div>
           ))}
         </div>

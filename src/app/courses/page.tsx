@@ -1,4 +1,5 @@
 import DynamicBannerCTA from "@/components/DynamicBannerCTA";
+import Methodology from "@/features/courses/Methodology";
 import CourseHero from "../../features/courses/CourseHero";
 import CurriculumPathways from "../../features/courses/CurriculumPathways";
 import VideoShowcase from "../../features/courses/VideoShowcase";
@@ -13,6 +14,7 @@ export default function CoursesPage() {
     <main className="flex-1 w-full bg-white flex flex-col">
       <CourseHero />
       <CurriculumPathways />
+      <Methodology />
       <VideoShowcase />
       <DynamicBannerCTA
         headline="Ready to Start Your Stellar Journey?"
