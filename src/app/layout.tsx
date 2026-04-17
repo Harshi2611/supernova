@@ -38,7 +38,9 @@ export default function RootLayout({
         <Navbar />
         <InquiryModal />
 
-        <main className="flex flex-col gap-16 flex-1">{children}</main>
+        <main className="flex flex-col gap-16 lg:gap-24 flex-1">
+          {children}
+        </main>
 
         <Footer />
       </body>

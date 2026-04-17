@@ -1,4 +1,3 @@
-import supernova from "@/assets/supernova.svg";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -10,32 +9,20 @@ export default function Footer() {
         {/* TOP SECTION */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-6 items-start">
           {/* LEFT - BRAND */}
-          <div className="lg:col-span-5 flex flex-col items-start space-y-6">
-            <div className="h-60 overflow-hidden flex items-center">
-              <Image
-                src={supernova}
-                alt="SuperNova Logo"
-                width={200}
-                height={60}
-                className="w-56 h-auto object-contain -mt-8 -mb-8"
-              />
-            </div>
-            {/* <div className="">
-              <Image
-                src={supernova ?? ""}
-                alt="SuperNova Logo"
-                width={280}
-                height={70}
-                className="object-contain"
-                priority
-              />
-            </div> */}
-            <p className="text-slate-500 text-[15px] leading-relaxed max-w-[380px]">
+          <div className="lg:col-span-5 flex flex-col items-start space-y-3">
+            <Image
+              src="/supernova.png"
+              alt="SuperNova Logo"
+              width={200}
+              height={60}
+              className="object-contain bg-transparent"
+            />
+            <p className="text-slate-500 text-base leading-relaxed max-w-xs">
               The premium standard in academic coaching, empowering students to
               achieve technical mastery and intellectual precision.
             </p>
 
-            <div className="flex gap-4 pt-2">
+            <div className="flex gap-4">
               {[FaInstagram, FaLinkedinIn, FaFacebookF].map((Icon, i) => (
                 <button
                   key={i}
@@ -89,7 +76,7 @@ export default function Footer() {
 
             <div className="flex flex-col gap-5 text-sm">
               <div className="flex gap-3 items-center text-slate-500 hover:text-primary transition">
-                <Mail className="w-5 h-5 text-primary" />
+                <Mail className="w-5 h-5 shrink-0 text-primary" />
                 <span className="text-sm leading-none">
                   supernovarajkot@gmail.com
                 </span>

@@ -23,7 +23,7 @@ export default function DynamicBannerCTA({
 }: DynamicBannerCTAProps) {
   return (
     <section className=" bg-[#eff6fb] overflow-hidden">
-      <div className="container">
+      <div className="container py-16">
         <div
           className={`flex flex-col ${
             reverse ? "lg:flex-row-reverse" : "lg:flex-row"

@@ -1,6 +1,5 @@
 "use client";
 
-import supernova from "@/assets/supernova.svg";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,17 +23,15 @@ export default function Navbar() {
     <nav className="w-full bg-white border-b shadow-sm fixed top-0 z-50">
       <div className="container flex items-center justify-between h-16">
         {/* Logo */}
-        <div className="h-60 overflow-hidden flex items-center">
-          <Link href="/">
-            <Image
-              src={supernova}
-              alt="SuperNova Logo"
-              width={200}
-              height={60}
-              className="h-60 w-auto object-contain"
-            />
-          </Link>
-        </div>
+        <Link href="/">
+          <Image
+            src="/supernova.png"
+            alt="SuperNova Logo"
+            width={200}
+            height={60}
+            className="object-contain"
+          />
+        </Link>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-8">
