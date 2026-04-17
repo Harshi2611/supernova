@@ -3,6 +3,20 @@ import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
+  const socialLinks = [
+    {
+      icon: FaInstagram,
+      url: "https://www.instagram.com/supernovarajkot/",
+    },
+    {
+      icon: FaLinkedinIn,
+      url: "https://www.linkedin.com/company/supernova-learning-center/",
+    },
+    {
+      icon: FaFacebookF,
+      url: "https://www.facebook.com/",
+    },
+  ];
   return (
     <footer className="relative z-20  bg-[#fafafa] border-t border-slate-100">
       <div className="container pt-16 lg:pt-16">
@@ -23,17 +37,20 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-4">
-              {[FaInstagram, FaLinkedinIn, FaFacebookF].map((Icon, i) => (
-                <button
-                  key={i}
-                  className="w-9 h-9 bg-[#EEF2F7] rounded-xl flex items-center justify-center hover:bg-primary group transition"
-                >
-                  <Icon
-                    className="text-primary group-hover:text-white w-5 h-5 transition"
-                    size={20}
-                  />
-                </button>
-              ))}
+              {socialLinks.map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <a
+                    key={i}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 bg-[#EEF2F7] rounded-xl flex items-center justify-center hover:bg-primary group transition"
+                  >
+                    <Icon className="text-primary group-hover:text-white w-5 h-5 transition" />
+                  </a>
+                );
+              })}
             </div>
           </div>
 

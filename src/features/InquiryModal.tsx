@@ -8,6 +8,7 @@ import {
   CheckCircle,
   GraduationCap,
   MessageCircle,
+  Star,
   X,
 } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -43,8 +44,10 @@ export default function InquiryModal() {
     initialValues: {
       studentName: "",
       phone: "",
-      grade: "",
-      course: "",
+      schoolName: "",
+      seekingAdmission: "",
+      referredFrom: "",
+      studyType: "",
       message: "",
     },
     validationSchema: Yup.object({
@@ -57,8 +60,10 @@ export default function InquiryModal() {
           /^[6-9]\d{9}$/,
           "Must be a valid 10-digit Indian phone number"
         ),
-      grade: Yup.string().required("Please select a grade/class"),
-      course: Yup.string().required("Please select your interested course"),
+      schoolName: Yup.string().required("School name is required"),
+      seekingAdmission: Yup.string().required("Please select a standard"),
+      referredFrom: Yup.string().required("Please select a reference"),
+      studyType: Yup.string().required("Please select a study type"),
     }),
     onSubmit: async (values) => {
       console.log("Form values:", values);
@@ -73,10 +78,48 @@ export default function InquiryModal() {
       hasError ? "border-red-300 ring-red-500" : "border-slate-200"
     }`;
 
+  const admissionOptions = [
+    { value: "grade_1", label: "Grade 1" },
+    { value: "grade_2", label: "Grade 2" },
+    { value: "grade_3", label: "Grade 3" },
+    { value: "grade_4", label: "Grade 4" },
+    { value: "grade_5", label: "Grade 5" },
+    { value: "grade_6", label: "Grade 6" },
+    { value: "grade_7", label: "Grade 7" },
+    { value: "grade_8", label: "Grade 8" },
+    { value: "grade_9", label: "Grade 9" },
+    { value: "grade_10", label: "Grade 10" },
+    { value: "grade_11_science", label: "Grade 11 – Science" },
+    { value: "grade_11_commerce", label: "Grade 11 – Commerce" },
+    { value: "grade_12_science", label: "Grade 12 – Science" },
+    { value: "grade_12_commerce", label: "Grade 12 – Commerce" },
+    { value: "crash_course", label: "Crash Course" },
+    { value: "spoken_english", label: "Spoken English" },
+    { value: "skill_development", label: "Skill Development" },
+    { value: "digital_skills", label: "Digital Skills" },
+    { value: "mothers_club", label: "Mothers Club" },
+  ];
+
+  const referenceOptions = [
+    { value: "social_media", label: "Social Media" },
+    { value: "friend_family", label: "Friend / Family" },
+    { value: "google", label: "Google Search" },
+    { value: "newspaper", label: "Newspaper / Pamphlet" },
+    { value: "existing_student", label: "Existing Student" },
+    { value: "school", label: "School" },
+    { value: "other", label: "Other" },
+  ];
+
+  const studyTypeOptions = [
+    { value: "personal", label: "Personal (1-on-1)" },
+    { value: "chapter", label: "Chapter-wise" },
+    { value: "group", label: "Group" },
+    { value: "at_your_place", label: "At Your Place" },
+  ];
+
   return (
     <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center bg-black/60 backdrop-blur-sm p-0 sm:p-4 animate-in fade-in duration-300">
-      {/* Modal Container */}
-      <div className="bg-white w-full sm:rounded-3xl sm:max-w-4xl shadow-2xl flex flex-col md:flex-row overflow-hidden relative max-h-[95dvh] sm:max-h-[90vh]">
+      <div className="bg-white w-full sm:rounded-md sm:max-w-4xl shadow-2xl flex flex-col md:flex-row overflow-hidden relative max-h-[95dvh] sm:max-h-[90vh]">
         {/* Close Button */}
         <button
           onClick={() => setIsOpen(false)}
@@ -85,10 +128,9 @@ export default function InquiryModal() {
           <X className="w-4 h-4" />
         </button>
 
-        {/* Left Side: Branding (md+) */}
+        {/* Left Side: Branding */}
         <div className="hidden md:flex md:w-5/12 bg-primary text-white p-10 flex-col justify-between relative overflow-hidden shrink-0">
           <div className="absolute inset-0 bg-[#051d40]/40 z-0" />
-
           <div className="relative z-10">
             <div className="flex items-center gap-3 mb-12">
               <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
@@ -98,19 +140,16 @@ export default function InquiryModal() {
                 SuperNova
               </span>
             </div>
-
             <h2 className="text-4xl font-bold font-heading leading-tight mb-6">
               Start Your <br />
               Journey to <br />
               Success.
             </h2>
-
             <p className="text-white/80 leading-relaxed mb-8">
               Join thousands of students achieving their dreams in engineering
               and medical sciences.
             </p>
           </div>
-
           <div className="relative z-10 space-y-6">
             <div className="inline-flex items-center gap-3 bg-white text-primary px-5 py-3 rounded-xl font-bold text-sm shadow-lg">
               <Award className="w-5 h-5 opacity-80 text-primary" />
@@ -119,7 +158,7 @@ export default function InquiryModal() {
           </div>
         </div>
 
-        {/* Mobile Top Banner (visible only on mobile) */}
+        {/* Mobile Top Banner */}
         <div className="md:hidden bg-primary text-white px-6 pt-8 pb-6">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
@@ -139,10 +178,10 @@ export default function InquiryModal() {
 
         {/* Right Side: Form */}
         <div className="w-full md:w-7/12 flex flex-col overflow-y-auto">
-          <div className="p-5 sm:p-8 md:p-10 flex flex-col justify-center flex-1">
+          <div className="p-5 sm:p-8 md:p-5 flex flex-col justify-center flex-1">
             {isSubmitted ? (
               <div className="text-center py-10 animate-in slide-in-from-bottom-4">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-green-50 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-green-50 rounded-md flex items-center justify-center mx-auto mb-5">
                   <CheckCircle className="w-8 h-8 sm:w-10 sm:h-10 text-green-500" />
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-bold font-heading text-slate-800 mb-3">
@@ -161,10 +200,11 @@ export default function InquiryModal() {
               </div>
             ) : (
               <>
-                <div className="mb-5 hidden md:block">
-                  <h3 className="text-xs font-bold text-secondary uppercase tracking-widest mb-1">
+                <div className="mb-5 hidden md:block space-y-2">
+                  <div className="inline-flex items-center gap-2 bg-primary text-white px-2 py-1.5 rounded-md text-sm md:text-xs font-bold border border-primary/20 uppercase tracking-widest shadow-sm w-fit">
+                    <Star className="w-3.5 h-3.5 fill-current text-white" />
                     Quick Inquiry
-                  </h3>
+                  </div>
                   <h2 className="text-3xl font-bold text-primary font-heading">
                     Admission Enquiry
                   </h2>
@@ -204,7 +244,7 @@ export default function InquiryModal() {
 
                     <div>
                       <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
-                        Phone Number <span className="text-red-500">*</span>
+                        Contact Number <span className="text-red-500">*</span>
                       </label>
                       <Input
                         id="phone"
@@ -225,61 +265,138 @@ export default function InquiryModal() {
                     </div>
                   </div>
 
-                  {/* Grade + Course */}
+                  {/* School Name */}
+                  <div>
+                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+                      School Name <span className="text-red-500">*</span>
+                    </label>
+                    <Input
+                      id="schoolName"
+                      placeholder="Enter your school name"
+                      className={`h-11 bg-slate-50 border-slate-200 focus-visible:ring-primary text-sm ${
+                        formik.touched.schoolName && formik.errors.schoolName
+                          ? "border-red-300 focus-visible:ring-red-500"
+                          : ""
+                      }`}
+                      {...formik.getFieldProps("schoolName")}
+                    />
+                    {formik.touched.schoolName && formik.errors.schoolName && (
+                      <p className="text-red-500 text-xs mt-1">
+                        {formik.errors.schoolName}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* Seeking Admission + Study Type */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
-                        Current Grade <span className="text-red-500">*</span>
+                        Seeking Admission In{" "}
+                        <span className="text-red-500">*</span>
                       </label>
                       <select
-                        id="grade"
+                        id="seekingAdmission"
                         className={selectClass(
-                          !!(formik.touched.grade && formik.errors.grade)
+                          !!(
+                            formik.touched.seekingAdmission &&
+                            formik.errors.seekingAdmission
+                          )
                         )}
-                        {...formik.getFieldProps("grade")}
+                        {...formik.getFieldProps("seekingAdmission")}
                       >
                         <option value="" disabled>
-                          Select Grade
+                          Select Standard / Course
                         </option>
-                        <option value="Class 8">Class 8</option>
-                        <option value="Class 9">Class 9</option>
-                        <option value="Class 10">Class 10</option>
-                        <option value="Class 11">Class 11</option>
-                        <option value="Class 12">Class 12</option>
-                        <option value="Dropper">Dropper</option>
+                        <optgroup label="Grade 1 – 10">
+                          {admissionOptions.slice(0, 10).map((o) => (
+                            <option key={o.value} value={o.value}>
+                              {o.label}
+                            </option>
+                          ))}
+                        </optgroup>
+                        <optgroup label="Grade 11 & 12">
+                          {admissionOptions.slice(10, 14).map((o) => (
+                            <option key={o.value} value={o.value}>
+                              {o.label}
+                            </option>
+                          ))}
+                        </optgroup>
+                        <optgroup label="Special Programs">
+                          {admissionOptions.slice(14).map((o) => (
+                            <option key={o.value} value={o.value}>
+                              {o.label}
+                            </option>
+                          ))}
+                        </optgroup>
                       </select>
-                      {formik.touched.grade && formik.errors.grade && (
-                        <p className="text-red-500 text-xs mt-1">
-                          {formik.errors.grade}
-                        </p>
-                      )}
+                      {formik.touched.seekingAdmission &&
+                        formik.errors.seekingAdmission && (
+                          <p className="text-red-500 text-xs mt-1">
+                            {formik.errors.seekingAdmission}
+                          </p>
+                        )}
                     </div>
 
                     <div>
                       <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
-                        Interested Course{" "}
-                        <span className="text-red-500">*</span>
+                        Study Type <span className="text-red-500">*</span>
                       </label>
                       <select
-                        id="course"
+                        id="studyType"
                         className={selectClass(
-                          !!(formik.touched.course && formik.errors.course)
+                          !!(
+                            formik.touched.studyType && formik.errors.studyType
+                          )
                         )}
-                        {...formik.getFieldProps("course")}
+                        {...formik.getFieldProps("studyType")}
                       >
                         <option value="" disabled>
-                          Select Program
+                          Select Study Type
                         </option>
-                        <option value="NEET">NEET Ultimate</option>
-                        <option value="JEE">JEE Main & Advanced</option>
-                        <option value="Foundation">Pre-Foundation</option>
+                        {studyTypeOptions.map((o) => (
+                          <option key={o.value} value={o.value}>
+                            {o.label}
+                          </option>
+                        ))}
                       </select>
-                      {formik.touched.course && formik.errors.course && (
+                      {formik.touched.studyType && formik.errors.studyType && (
                         <p className="text-red-500 text-xs mt-1">
-                          {formik.errors.course}
+                          {formik.errors.studyType}
                         </p>
                       )}
                     </div>
+                  </div>
+
+                  {/* Referred From */}
+                  <div>
+                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5">
+                      Referred From <span className="text-red-500">*</span>
+                    </label>
+                    <select
+                      id="referredFrom"
+                      className={selectClass(
+                        !!(
+                          formik.touched.referredFrom &&
+                          formik.errors.referredFrom
+                        )
+                      )}
+                      {...formik.getFieldProps("referredFrom")}
+                    >
+                      <option value="" disabled>
+                        How did you hear about us?
+                      </option>
+                      {referenceOptions.map((o) => (
+                        <option key={o.value} value={o.value}>
+                          {o.label}
+                        </option>
+                      ))}
+                    </select>
+                    {formik.touched.referredFrom &&
+                      formik.errors.referredFrom && (
+                        <p className="text-red-500 text-xs mt-1">
+                          {formik.errors.referredFrom}
+                        </p>
+                      )}
                   </div>
 
                   {/* Message */}
