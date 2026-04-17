@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
-import "./globals.css";
-import Navbar from "../features/Navbar";
 import Footer from "../features/Footer";
 import InquiryModal from "../features/InquiryModal";
+import Navbar from "../features/Navbar";
+import "./globals.css";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -34,10 +34,12 @@ export default function RootLayout({
       className={`${manrope.variable} ${spaceGrotesk.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col font-sans">
         <Navbar />
         <InquiryModal />
-        {children}
+
+        <main className="flex flex-col gap-16 flex-1">{children}</main>
+
         <Footer />
       </body>
     </html>

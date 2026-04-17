@@ -1,7 +1,7 @@
 "use client";
 
+import { Atom, BookOpen, Brain, Play, TrendingUp } from "lucide-react";
 import { useState } from "react";
-import { Play, BookOpen, Atom, TrendingUp, Brain } from "lucide-react";
 
 const videos = [
   {
@@ -27,7 +27,11 @@ const videos = [
     subtitle: "Coaching for India's toughest entrances",
     description:
       "Comprehensive JEE & NEET preparation with chapter-wise modules, formula sheets, and previous-year analyses. Our faculty breaks down complex topics into digestible, high-yield lessons with a proven track record of top ranks.",
-    highlights: ["Physics & Chemistry Deep Dives", "Previous 10-Year Papers", "Doubt Clearing Sessions"],
+    highlights: [
+      "Physics & Chemistry Deep Dives",
+      "Previous 10-Year Papers",
+      "Doubt Clearing Sessions",
+    ],
     youtubeId: "dQw4w9WgXcQ",
     accentColor: "#145da0",
     lightBg: "#fefce8",
@@ -41,7 +45,11 @@ const videos = [
     subtitle: "Igniting curiosity from the start",
     description:
       "For younger learners, we focus on building strong mathematical reasoning, scientific curiosity, and a love for learning. Interactive methods like mind-maps, quizzes, and hands-on experiments make each session memorable.",
-    highlights: ["Logical Reasoning", "Science Olympiad Prep", "Vedic Math Basics"],
+    highlights: [
+      "Logical Reasoning",
+      "Science Olympiad Prep",
+      "Vedic Math Basics",
+    ],
     youtubeId: "dQw4w9WgXcQ",
     accentColor: "#145da0",
     lightBg: "#f0fdf4",
@@ -55,7 +63,11 @@ const videos = [
     subtitle: "Real students. Real transformations.",
     description:
       "Hear directly from our top achievers and their parents. From AIR ranks in JEE to perfect board scores, our alumni have proven that the SuperNova method works — time and time again.",
-    highlights: ["98% Board Success Rate", "Top 500 JEE Ranks", "500+ Alumni Stories"],
+    highlights: [
+      "98% Board Success Rate",
+      "Top 500 JEE Ranks",
+      "500+ Alumni Stories",
+    ],
     youtubeId: "dQw4w9WgXcQ",
     accentColor: "#145da0",
     lightBg: "#faf5ff",
@@ -108,8 +120,8 @@ function VideoCard({ youtubeId, title }: { youtubeId: string; title: string }) {
 
 export default function VideoShowcase() {
   return (
-    <section className="py-20 lg:py-28 bg-white overflow-hidden">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="bg-white overflow-hidden">
+      <div className="container">
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-20">
           <span className="inline-block bg-[#eff6fb] text-[#145da0] text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4 border border-[#b1d4e0]">

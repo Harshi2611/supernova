@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function DigitalRevolutionCTA() {
   return (
-    <section className="py-12 lg:py-14 bg-white">
+    <section className=" bg-white">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

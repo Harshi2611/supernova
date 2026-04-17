@@ -25,13 +25,15 @@ export default function Navbar() {
       <div className="container flex items-center justify-between h-16">
         {/* Logo */}
         <div className="h-60 overflow-hidden flex items-center">
-          <Image
-            src={supernova}
-            alt="SuperNova Logo"
-            width={200}
-            height={60}
-            className="h-60 w-auto object-contain"
-          />
+          <Link href="/">
+            <Image
+              src={supernova}
+              alt="SuperNova Logo"
+              width={200}
+              height={60}
+              className="h-60 w-auto object-contain"
+            />
+          </Link>
         </div>
 
         {/* Desktop Nav */}

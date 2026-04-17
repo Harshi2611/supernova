@@ -11,8 +11,8 @@ import { ArrowRight, BookOpen, Calculator } from "lucide-react";
 
 export default function CurriculumPathways() {
   return (
-    <section className="py-20 bg-slate-50 relative">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="bg-slate-50 relative">
+      <div className="container py-16 lg:py-16">
         {/* Header and Filters */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>

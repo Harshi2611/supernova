@@ -234,7 +234,7 @@ export default function Testimonials() {
   const textReviews = reviews.filter((r) => r.type === "text").slice(0, 6);
 
   return (
-    <section className="py-20 lg:py-28 ">
+    <section className="">
       <div className="container">
         {/* ── Header ── */}
         <div className="flex flex-col items-center text-center mb-4 gap-3">

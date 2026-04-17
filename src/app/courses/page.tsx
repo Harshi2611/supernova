@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function CoursesPage() {
   return (
-    <main className="flex-1 w-full bg-white flex flex-col">
+    <>
       <CourseHero />
       <CurriculumPathways />
       <Methodology />
@@ -21,6 +21,6 @@ export default function CoursesPage() {
         buttonText="Start Learning Today!"
         imageSrc="/focused_student_hero.png"
       />
-    </main>
+    </>
   );
 }

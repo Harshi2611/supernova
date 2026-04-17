@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function CourseHero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white pt-24 pb-16 lg:pt-32 lg:pb-24">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white min-h-[calc(100vh-64px)] flex items-center">
+      <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Text Content */}
           <div className="max-w-2xl animate-fade-in-up">

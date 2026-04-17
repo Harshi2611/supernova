@@ -6,7 +6,7 @@ import { PlayCircle, Star } from "lucide-react";
 
 export default function HomeHero() {
   return (
-    <section className="relative overflow-hidden bg-[#eff6fb] min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-16 lg:pt-36 lg:pb-16">
+    <section className="relative overflow-hidden bg-[#eff6fb] min-h-[calc(100vh-64px)] flex items-center pt-32">
       {/* Background elements */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/60 via-transparent to-transparent pointer-events-none z-0"></div>
 
@@ -18,12 +18,14 @@ export default function HomeHero() {
           transition={{ duration: 0.6 }}
           className="flex flex-col items-center max-w-4xl w-full"
         >
-          <div className="inline-flex items-center gap-2 bg-white text-primary px-4 py-2 rounded-md text-xs font-bold border border-primary/20 uppercase tracking-widest mb-8 shadow-sm">
+          <div
+            className="inline-flex 
+          items-center gap-2 bg-white text-primary px-3 py-1.5 rounded-md text-[11px] font-bold border border-primary/20 uppercase tracking-widest mb-6 shadow-sm w-fit"
+          >
             <Star className="w-3.5 h-3.5 fill-current text-primary" />
             Education is passion
           </div>
-
-          <h1 className="text-5xl lg:text-6xl font-bold font-heading text-primary leading-[1.1] mb-4 max-w-7xl tracking-tight lg:whitespace-nowrap ">
+          <h1 className="text-5xl lg:text-6xl font-bold font-heading text-primary leading-[1.1] mb-4 lg:whitespace-nowrap tracking-tight">
             Transform Your Academic with SuperNova
           </h1>
 

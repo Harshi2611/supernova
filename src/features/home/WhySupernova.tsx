@@ -50,7 +50,7 @@ export default function WhySupernova() {
   ];
 
   return (
-    <section className="py-20 lg:py-16 bg-[#eff6fb]  text-primary relative overflow-hidden">
+    <section className="py-16 lg:py-16 bg-[#eff6fb]  text-primary relative overflow-hidden">
       {/* Optional subtle background gradient to keep it visually rich without image clutter */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/60 via-transparent to-transparent pointer-events-none z-0"></div>
 
@@ -78,11 +78,11 @@ export default function WhySupernova() {
                 </div>
               </div>
 
-              <h3 className="text-xl md:text-2xl font-bold leading-tight mb-1">
+              <h3 className="text-xl uppercase md:text-xl font-bold leading-tight mb-1">
                 {feature.title}
               </h3>
 
-              <p className="text-sm text-slate-600 font-medium tracking-wide">
+              <p className="text-sm uppercase text-slate-600 font-medium tracking-wide">
                 {feature.subtitle}
               </p>
             </div>

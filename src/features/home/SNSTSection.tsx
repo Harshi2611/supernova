@@ -36,7 +36,7 @@ export default function SNSTSection() {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <section className="py-20 lg:py-32 bg-white">
+    <section className=" bg-white">
       <div className="container">
         {/* Row 1: Header */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 mb-8 lg:mb-12">

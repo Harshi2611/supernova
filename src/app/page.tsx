@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex-1 w-full bg-white flex flex-col min-h-screen">
+    <>
       <HomeHero />
       <CollaborationMarquee />
       <OurApproach />
@@ -28,6 +28,6 @@ export default function Home() {
       />
       <Testimonials />
       <DigitalRevolutionCTA />
-    </main>
+    </>
   );
 }
