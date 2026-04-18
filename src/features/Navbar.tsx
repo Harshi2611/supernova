@@ -57,9 +57,11 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button className="py-5 px-6 bg-primary uppercase font-semibold text-base rounded-md">
-            Enroll Now
-          </Button>
+          <Link href="/registration">
+            <Button className="py-5 px-6 bg-primary uppercase font-semibold text-base rounded-md">
+              Enroll Now
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -86,7 +88,9 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <Button className="py-5">Enroll Now</Button>
+            <Link href="/registration">
+              <Button className="py-5">Enroll Now</Button>
+            </Link>
           </div>
         </div>
       )}
